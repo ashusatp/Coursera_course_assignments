@@ -62,13 +62,9 @@ h1{
     }
     .card_1{
         flex: 45%;
-        width: 400px;
-        height: 250px;
     }
     .card_2{
         flex: 45%;
-        width: 400px;
-        height: 250px;
     }
     .card_3{
         flex: 100%;
