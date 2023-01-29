@@ -1,0 +1,82 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+    justify-content: center;
+}
+h1{
+    font-size: 3rem;
+}
+.container{
+    margin: 2rem;
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.card{
+    position: relative;
+    padding: 3rem 2rem;
+    height: 250px;
+    width: 400px;
+   box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+   line-height: 25px;
+   font-size: 16px;
+}
+.card p{
+    line-height: 20px;
+   font-size: 16px;
+}
+.section{
+    position: absolute;
+    top: 0;
+    padding: 0.5rem 2rem;
+    right: 0;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: rgb(255, 235, 85);
+}
+.card_1{
+    background-color: rgb(144, 255, 185);
+}
+.card_2{
+    background-color: rgb(111, 174, 255);
+}
+.card_3{
+    background-color: rgb(255, 103, 240);
+}
+@media only screen and (max-width: 991px){
+	/*Big smartphones [426px -> 600px]*/
+    .container{
+        flex-wrap: wrap;
+    }
+    .card_1{
+        flex: 45%;
+        width: 400px;
+        height: 250px;
+    }
+    .card_2{
+        flex: 45%;
+        width: 400px;
+        height: 250px;
+    }
+    .card_3{
+        flex: 100%;
+    }
+}
+@media only screen and (max-width: 767px){
+	/*Small smartphones [325px -> 425px]*/
+    .card{
+        flex: 100%;
+    }
+}
