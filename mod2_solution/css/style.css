@@ -28,15 +28,15 @@ h1{
 .card{
     position: relative;
     padding: 3rem 2rem;
-    height: 250px;
+    height: 280px;
     width: 400px;
    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
    line-height: 25px;
    font-size: 16px;
 }
 .card p{
-    line-height: 20px;
-   font-size: 16px;
+    line-height: 18px;
+   font-size: 15px;
 }
 .section{
     position: absolute;
@@ -62,13 +62,9 @@ h1{
     }
     .card_1{
         flex: 45%;
-        width: 400px;
-        height: 250px;
     }
     .card_2{
         flex: 45%;
-        width: 400px;
-        height: 250px;
     }
     .card_3{
         flex: 100%;
