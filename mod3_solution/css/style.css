@@ -1,0 +1,87 @@
+#navbarNav{
+    margin-top: 0.5rem;
+}
+.navbar-nav{
+    text-align: center;
+}
+.nav-item{
+    background-color:#e9ecef ;
+    border-bottom: 2px solid black;
+    transition: all 0.3s ease-in-out;
+}
+
+.nav-item:hover{
+    background-color:#ced4da ;
+}
+
+.OurMenu{
+    margin-top: 2rem;
+    font-size: 3rem;
+    text-align: center;
+}
+.container{
+    margin: 2rem;
+    display: flex;
+    width: 100%;
+    /* flex-wrap: wrap; */
+    gap: 20px;
+    padding: 2rem;
+    align-items: center;
+    justify-content: center;
+}
+.container .card{
+    position: relative;
+    padding: 3rem 2rem;
+    height: 250px;
+    width: 400px;
+   box-shadow: rgba(0, 0, 0, 0.15) 2.95px 2.95px 6.6px;
+   line-height: 25px;
+   font-size: 16px;
+   overflow: hidden;
+}
+.card p{
+    line-height: 20px;
+   font-size: 16px;
+}
+.container .section{
+    position: absolute;
+    top: -1px;
+    padding: 0.5rem 2rem;
+    right: -1px;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    background-color: rgb(255, 235, 85);
+}
+.container .card_1{
+    background-color: rgb(144, 255, 185);
+}
+.container .card_2{
+    background-color: rgb(111, 174, 255);
+}
+.container .card_3{
+    background-color: rgb(255, 103, 240);
+}
+@media only screen and (max-width: 991px){
+	/*Big smartphones [426px -> 600px]*/
+    .container{
+        flex-wrap: wrap;
+    }
+    .card_1{
+        flex: 45%;
+        width: 400px;
+        height: 250px;
+    }
+    .card_2{
+        flex: 45%;
+        width: 400px;
+        height: 250px;
+    }
+    .card_3{
+        flex: 100%;
+    }
+}
+@media only screen and (max-width: 767px){
+	/*Small smartphones [325px -> 425px]*/
+    .card{
+        flex: 100%;
+    }
+}
